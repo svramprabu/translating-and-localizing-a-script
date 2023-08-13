@@ -1,12 +1,14 @@
-## 11.08.2023
-ChatGPT Prompt Engineering for Developers - completed this course in deeplaearning.ai 
-read the assignment to have better understanding of the end goal. 
 
-## 12.08.2023
-Building Systems with the ChatGPT API - studying this course in deeplaearning.ai 
+## Report log for Emplay Assignment
+### 11.08.2023
+- __*ChatGPT Prompt Engineering for Developers*__ - completed this course in deeplaearning.ai 
+- read the assignment to have better understanding of the end goal. 
 
-## 13.08.2023
-Building Systems with the ChatGPT API - completed this course in deeplaearning.ai 
-LangChain for LLM Application Development - studying this course in deeplaearning.ai 
+### 12.08.2023
+- __*Building Systems with the ChatGPT API*__ - studying this course in deeplaearning.ai 
+
+### 13.08.2023
+- __*Building Systems with the ChatGPT API*__ - completed this course in deeplaearning.ai 
+- LangChain for LLM Application Development - studying this course in deeplaearning.ai 
 
 
