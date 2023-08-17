@@ -12,7 +12,12 @@
 - LangChain for LLM Application Development - studying this course in deeplaearning.ai
 
 ### 16.08.2023
-- LangChain for LLM Application Development - completed this course in deeplaearning.ai
+- __*LangChain for LLM Application Development*__ - completed this course in deeplaearning.ai
+- __*LangChain Chat with Your Data*__ - studying this course in deeplaearning.ai
+
+### 17.08.2023
+- LangChain Chat with Your Data - studying this course in deeplaearning.ai
+- 
   
 
 ### __*Reference Material*__
