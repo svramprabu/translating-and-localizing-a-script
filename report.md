@@ -18,7 +18,10 @@
 ### 17.08.2023
 - LangChain Chat with Your Data - studying this course in deeplaearning.ai
 - 
-  
+
+  Using LLM is really easy prompt and get the needed output.
+  used inbuilt translator api in python to translate using google.
+  tried using NER using SpaCy which isn't accurate - found a solution for better accuracy but it costs to use it - pii tools
 
 ### __*Reference Material*__
 
