@@ -10,6 +10,10 @@ Working on the final Assignment
 
 ## LLM Version
 
+- used doc2txt loader in langchain to load the docx file
+- as a trial used openai to translate the text and prompted in the same for a name replacement which was difficult hence tried to use simple sequential chain and then finally adapted sequential chain to process the input text.
+
+As a whole this project felt simple to work on but learn quite a lot about prompting and langchain from the short courses in deeplearning.ai
 ## No-LLM Version
 
   Using LLM is really easy prompt and get the needed output.

@@ -18,6 +18,7 @@ openai.api_key  = os.environ['OPENAI_API_KEY']
 # print(os.environ['OPENAI_API_KEY'])
 
 # st.write(os.environ['OPENAI_API_KEY'])
+uploaded_file = st.file_uploader("Choose a file")
 
 from langchain.document_loaders import Docx2txtLoader
 
@@ -34,7 +35,7 @@ file_to_work = st.sidebar.selectbox('Choose the source file from the dropdown',
 loader = Docx2txtLoader(f"{file_to_work}")
 data = loader.load()
 # data
-
+data = uploaded_file.getvalue()
 product = data[0].page_content[590:600]
 # product = data
 # st.write(product)
