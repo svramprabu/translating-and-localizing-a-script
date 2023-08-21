@@ -8,6 +8,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 import docx
+from io import StringIO
 
 sys.path.append('../..')
 
@@ -32,10 +33,12 @@ file_to_work = st.sidebar.selectbox('Choose the source file from the dropdown',
 # st.write(file_to_work)
 
 # loader = Docx2txtLoader("Demo Script.docx")
-loader = Docx2txtLoader(f"{file_to_work}")
+# loader = Docx2txtLoader(f"{file_to_work}")
+loader = Docx2txtLoader(f"{uploaded_file}")
 data = loader.load()
 # data
-data = uploaded_file.getvalue()
+# data = uploaded_file.getvalue()
+# data = StringIO(uploaded_file.getvalue().decode("utf-8"))
 product = data[0].page_content[590:600]
 # product = data
 # st.write(product)
