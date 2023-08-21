@@ -8,17 +8,19 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 import docx
-
+from io import StringIO
 sys.path.append('../..')
 
 from dotenv import load_dotenv, find_dotenv
 _ = load_dotenv(find_dotenv()) # read local .env file
 
-openai.api_key  = os.environ['OPENAI_API_KEY']
+# openai.api_key  = os.environ['OPENAI_API_KEY']
+openai.api_key  = st.secrets.OPENAI_API_KEY
+# st.write(st.secrets.OPENAI_API_KEY)
 # print(os.environ['OPENAI_API_KEY'])
 
 # st.write(os.environ['OPENAI_API_KEY'])
-uploaded_file = st.file_uploader("Choose a file")
+# uploaded_file = st.file_uploader("Choose a file")
 
 from langchain.document_loaders import Docx2txtLoader
 
@@ -33,9 +35,13 @@ file_to_work = st.sidebar.selectbox('Choose the source file from the dropdown',
 
 # loader = Docx2txtLoader("Demo Script.docx")
 loader = Docx2txtLoader(f"{file_to_work}")
+# loader = Docx2txtLoader(f"{uploaded_file.getvalue()}")
 data = loader.load()
 # data
-data = uploaded_file.getvalue()
+# data = uploaded_file.getvalue()
+# data = StringIO(uploaded_file.getvalue().decode("utf-8"))
+# data = str(uploaded_file.read())
+# st.write(data)
 product = data[0].page_content[590:600]
 # product = data
 # st.write(product)

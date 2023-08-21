@@ -169,5 +169,17 @@ for para in doc.paragraphs:
         pass
     break
 
+st.title('Emplay Assignment')
+st.header(' to translate the given script to the user specified language and replace names with respect to the nationality')
+st.write(":green[Translating]")
+st.write(f":red[This is the input text]")
+
 st.write(og_text)
+st.write(f":red[This is the {ts_lang} translated text]")
+
 st.write(text)
+
+st.write(":red[This is the final output with the user chosen nationality names.]")
+st.write("Yet to completed")
+
+st.success(":green[Final output is saved as Localised Demo Script.docx]")
